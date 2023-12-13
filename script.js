@@ -36,7 +36,7 @@ function calculateAverageTimeForPrimalityChecks(start, end) {
     totalTime += endTime - startTime;
   }
 
-  return totalTime / primes.length;
+  return totalTime /2;
 }
 
 function showTimeMetrics() {
