@@ -3,25 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <title>Prime Number Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .result-container {
+      margin-top: 20px;
+    }
+  </style>
+  <!-- Include jQuery library -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="script.js"></script>
-  <title>Prime Numbers Checker</title>
 </head>
 <body>
-  <div class="container">
-    <h1>KENNECT TECHNOLOGIES TASK 2</h1>
-    <label for="startRange">Start Range:</label>
-    <input type="number" id="startRange" placeholder="Enter start range">
+  <h1>Prime Number Checker</h1>
 
-    <label for="endRange">End Range:</label>
-    <input type="number" id="endRange" placeholder="Enter end range">
+  <label for="startRange">Start Range:</label>
+  <input type="text" id="startRange" value="1">
 
-    <button onclick="showTimeMetrics()">Enter</button>
-    <button onclick="showTableDetails()">Details</button>
+  <label for="endRange">End Range:</label>
+  <input type="text" id="endRange" value="100">
 
-    <div id="resultContainer" class="result">
-    </div>
-  </div>
+  <button onclick="showTimeMetrics()">Show Time Metrics</button>
+  <button onclick="showTableDetails()">Show Table Details</button>
+
+  <div id="resultContainer" class="result-container"></div>
 </body>
 </html>
